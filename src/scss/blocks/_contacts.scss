@@ -1,0 +1,17 @@
+.contacts {
+  background-image: url(("./../../img/contacts/frame.jpg"));
+  width: 796px;
+  margin-left: auto;
+  margin-top: 105px;
+
+  @include mediaBg {
+    background-image: url("./../../img/contacts/frame@2x.jpg");
+  }
+}
+
+.icons {
+  width: 29px; /* Ширина иконок */
+  height: 29px; /* Высота иконок */
+  padding: 32 32 32 32; /* Отступы между иконками */
+  fill: white; /* Цвет иконок */
+}

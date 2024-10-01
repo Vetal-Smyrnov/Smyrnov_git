@@ -1,0 +1,123 @@
+<button id="openModalBtn">Open book</button>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <h2>Select service</h2>
+    <select id="dropdown">
+      <option value="option1"></option>
+      <option value="option1">Man`s Haircut <span>from 200₴</span></option>
+
+      <option value="option2">
+        Man’s haircut with trimmer <span>from 250₴</span>
+      </option>
+
+      <option value="option3">
+        Beard and mustache haircut <span>from 300₴</span>
+      </option>
+
+      <option value="option3">Buzz Cut <span>from 300₴</span></option>
+
+      <option value="option3">
+        Straight Razon Shave <span>from 350₴</span>
+      </option>
+
+      <option value="option3">Hair Styling <span>from 100₴</span></option>
+      <table>
+        <thead>
+          <tr>
+            <th>Barbershop</th>
+            <th>Search Barbers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Classic Cuts</td>
+            <td>
+              <input type="text" id="searchBar" placeholder="Man`s Haircut" />
+              <button id="resetButton">Reset</button>
+              <ul id="barberList"></ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </select>
+
+    <h2>Barber</h2>
+    <select id="dropdown">
+      <option value="option1"></option>
+
+      <option value="option1">Wade Warner <span>from 200₴</span></option>
+
+      <option value="option2">Leslie Alexander <span>from 250₴</span></option>
+
+      <option value="option3">Cameron Williamson <span>from 300₴</span></option>
+
+      <option value="option3">Ralph Edwards <span>from 250₴</span></option>
+
+      <option value="option3">Kathryn Murphy <span>from 350₴</span></option>
+
+      <option value="option3">Hair Styling <span>from 350₴</span></option>
+      <table>
+        <thead>
+          <tr>
+            <th>Barbershop</th>
+            <th>Search Barbers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Classic Cuts</td>
+            <td>
+              <input type="text" id="searchBar" placeholder="Top master" />
+              <button id="resetButton">Reset</button>
+              <ul id="barberList"></ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <script>
+        document
+          .getElementById("searchBar")
+          .addEventListener("input", function () {
+            let filter = this.value.toLowerCase();
+            let listItems = document.querySelectorAll("#barberList li");
+            listItems.forEach(function (item) {
+              if (item.textContent.toLowerCase().includes(filter)) {
+                item.style.display = "";
+              } else {
+                item.style.display = "none";
+              }
+            });
+          });
+
+        document
+          .getElementById("resetButton")
+          .addEventListener("click", function () {
+            document.getElementById("searchBar").value = "";
+            let listItems = document.querySelectorAll("#barberList li");
+            listItems.forEach(function (item) {
+              item.style.display = "";
+            });
+          });
+      </script>
+    </select>
+
+    <h3>Name</h3>
+    <input type="text" id="name" placeholder="Enter your name" />
+
+    <h3>Date and Time</h3>
+    <input type="datetime-local" id="datetime" />
+
+    <h3>Phone</h3>
+    <input type="tel" id="phone" placeholder="Enter your phone number" />
+
+    <h3>Comment</h3>
+    <textarea id="comment" placeholder="Enter your comment"></textarea>
+
+    <h3>Call me to confirm the appointment</h3>
+    <input type="checkbox" id="confirm" />
+
+    <button id="closeBtn">×</button>
+  </div>
+</div>

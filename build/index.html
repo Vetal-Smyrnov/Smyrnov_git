@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Smyrnov Project</title>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+		<link rel="icon" type="image/x-icon" href="/img/favicons/favicon.svg" />
+		<link rel="icons" type="image/x-icons" href="/img/favicons/symbol-defs.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<a href="" class="link logo header__logo"><span class="logo-web">GEK</span><span class="logo-web">TOR</span></a>
+					<nav class="header__nav nav">
+						<ul class="nav__list">
+							<li><a href="" class="active">About us</a></li>
+							<li><a href="">Services</a></li>
+							<li><a href="">Booking</a></li>
+							<li><a href="">Gallery</a></li>
+							<li><a href="">Reviews</a></li>
+							<li><a href="">Contacts</a></li>
+							<title>Language Switcher</title>
+							<style>
+								.lang-switcher {
+									display: flex;
+									gap: 10px;
+								}
+								.lang-switcher button {
+									padding: 10px 20px;
+									font-size: 16px;
+									cursor: pointer;
+									border: 1px solid #ccc;
+									background-color: #f9f9f9;
+									border-radius: 5px;
+									transition: background-color 0.3s ease;
+								}
+								.lang-switcher button:hover {
+									background-color: #e0e0e0;
+								}
+								.lang-switcher button.active {
+									background-color: #007bff;
+									color: white;
+								}
+							</style>
+
+							<div class="lang-switcher">
+								<button id="en-btn" class="active">EN</button>
+								<button id="ua-btn">UA</button>
+							</div>
+
+							<script>
+								const enBtn = document.getElementById("en-btn");
+								const uaBtn = document.getElementById("ua-btn");
+
+								enBtn.addEventListener("click", () => {
+									enBtn.classList.add("active");
+									uaBtn.classList.remove("active");
+									// Логика переключения на английский язык
+								});
+
+								uaBtn.addEventListener("click", () => {
+									uaBtn.classList.add("active");
+									enBtn.classList.remove("active");
+									// Логика переключения на украинский язык
+								});
+							</script>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="hero">
+				<div class="container">
+					<section class="networks">
+						<div>
+							<ul class="">
+								<li class="">
+									<!-- Иконка Instagram -->
+									<a href="https://www.instagram.com" target="_blank">
+										<i class="fab fa-instagram" style="font-size: 29px"></i>
+									</a>
+									<a class="" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"> </a>
+								</li>
+								<li class="">
+									<!-- Иконка Facebook -->
+									<a href="https://www.facebook.com" target="_blank">
+										<i class="fab fa-facebook" style="font-size: 29px"></i>
+									</a>
+									<a class="" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"> </a>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<div class="hero__content">
+						<ul class="hero__title">
+							<p>
+								Not just a&#160;hair salon <br />
+								for men.
+							</p>
+
+							<li>
+								Create and renew the style of&#160;<br />
+								your haircut
+							</li>
+						</ul>
+
+						<a href="" class="btn">Book online</a>
+						<section class="contacts">
+							<div class="">
+								<ul class="">
+									<li class="">
+										<svg class="icons" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+											<path
+												d="M20.586 23.414l-6.586-6.586v-8.828h4v7.172l5.414 5.414zM16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12z"
+											></path>
+										</svg>
+										<a href="https://maps.app.goo.gl/jBuLFmbjbUNoTqSr5" target="_blank" rel="noopener noreferrer nofollow" class="link address"
+											>Obolonsky Prospect, 14, Kiyv</a
+										>
+									</li>
+									<li class="item">
+										<svg class="icons" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+											<path
+												d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"
+											></path>
+										</svg>
+
+										<a href="mailto:info@devstudio.com" class="link basemant__link">info@devstudio.com</a>
+									</li>
+									<li class="item">
+										<svg class="icons" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+											<path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+										</svg>
+										<a href="tel:+38096111111" class="link basemant__link">+38 096 111 11 11</a>
+									</li>
+									<li class="item">
+										<!-- Generated by IcoMoon.io -->
+										<svg class="icons" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+											<path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+										</svg>
+
+										<a href="tel:+380679384758" class="link basemant__link">+38 067 938 47 58</a>
+									</li>
+								</ul>
+							</div>
+							<div class="basement__networks"></div>
+						</section>
+					</div>
+				</div>
+			</section>
+			<section class="best">
+				<div class="container">
+					<div class="best__title-wrapper">
+						<h2 class="best__title title">Best Sellers</h2>
+					</div>
+
+					<div class="best__cards">
+						<!-- Slider main container -->
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<article class="card">
+										<div class="card__fav-btn">
+											<button class="card__btn-fav">
+												<svg class="icon icon--favorite">
+													<use href="./img/svgsprite/sprite.symbol.svg#favorite"></use>
+												</svg>
+											</button>
+										</div>
+
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/best/best-01.webp 1x, ./img/best/best-01@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/best/best-01.jpg 1x, ./img/best/best-01@2x.jpg 2x" type="image/jpeg" />
+												<img src="./img/best/best-01.jpg" alt="tailored stretch" class="card__img" />
+											</picture>
+										</div>
+
+										<div class="card__body">
+											<h3 class="card__title"><a href="#!">tailored stretch</a></h3>
+
+											<div class="card__cols">
+												<div class="card__desc">turn it&#160;up&#160;pants</div>
+												<div class="card__price">$180</div>
+											</div>
+
+											<div class="card__colors">
+												<div class="color color--black"></div>
+
+												<div class="color color--blue"></div>
+
+												<div class="color color--green"></div>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card">
+										<div class="card__fav-btn">
+											<button class="card__btn-fav">
+												<svg class="icon icon--favorite">
+													<use href="./img/svgsprite/sprite.symbol.svg#favorite"></use>
+												</svg>
+											</button>
+										</div>
+
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/best/best-02.webp 1x, ./img/best/best-02@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/best/best-02.jpg 1x, ./img/best/best-02@2x.jpg 2x" type="image/jpeg" />
+												<img src="./img/best/best-02.jpg" alt="tailored stretch" class="card__img" />
+											</picture>
+										</div>
+
+										<div class="card__body">
+											<h3 class="card__title"><a href="#!">Technical Silk</a></h3>
+
+											<div class="card__cols">
+												<div class="card__desc">Make A&#160;Splash</div>
+												<div class="card__price">$120</div>
+											</div>
+
+											<div class="card__colors">
+												<div class="color color--olive"></div>
+
+												<div class="color color--navy"></div>
+
+												<div class="color color--black"></div>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card">
+										<div class="card__fav-btn">
+											<button class="card__btn-fav">
+												<svg class="icon icon--favorite">
+													<use href="./img/svgsprite/sprite.symbol.svg#favorite"></use>
+												</svg>
+											</button>
+										</div>
+
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/best/best-03.webp 1x, ./img/best/best-03@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/best/best-03.jpg 1x, ./img/best/best-03@2x.jpg 2x" type="image/jpeg" />
+												<img src="./img/best/best-03.jpg" alt="tailored stretch" class="card__img" />
+											</picture>
+										</div>
+
+										<div class="card__body">
+											<h3 class="card__title"><a href="#!">Cool Weave</a></h3>
+
+											<div class="card__cols">
+												<div class="card__desc">Anywhere Dress</div>
+												<div class="card__price">$210</div>
+											</div>
+
+											<div class="card__colors">
+												<div class="color color--pink"></div>
+
+												<div class="color color--olive"></div>
+
+												<div class="color color--green"></div>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card">
+										<div class="card__fav-btn">
+											<button class="card__btn-fav">
+												<svg class="icon icon--favorite">
+													<use href="./img/svgsprite/sprite.symbol.svg#favorite"></use>
+												</svg>
+											</button>
+										</div>
+
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/best/best-04.webp 1x, ./img/best/best-04@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/best/best-04.jpg 1x, ./img/best/best-04@2x.jpg 2x" type="image/jpeg" />
+												<img src="./img/best/best-04.jpg" alt="tailored stretch" class="card__img" />
+											</picture>
+										</div>
+
+										<div class="card__body">
+											<h3 class="card__title"><a href="#!">Cool Dress</a></h3>
+
+											<div class="card__cols">
+												<div class="card__desc">Anywhere Dress</div>
+												<div class="card__price">$210</div>
+											</div>
+
+											<div class="card__colors">
+												<div class="color color--white"></div>
+
+												<div class="color color--black"></div>
+
+												<div class="color color--green"></div>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card">
+										<div class="card__fav-btn">
+											<button class="card__btn-fav">
+												<svg class="icon icon--favorite">
+													<use href="./img/svgsprite/sprite.symbol.svg#favorite"></use>
+												</svg>
+											</button>
+										</div>
+
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/best/best-05.webp 1x, ./img/best/best-05@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/best/best-05.jpg 1x, ./img/best/best-05@2x.jpg 2x" type="image/jpeg" />
+												<img src="./img/best/best-05.jpg" alt="tailored stretch" class="card__img" />
+											</picture>
+										</div>
+
+										<div class="card__body">
+											<h3 class="card__title"><a href="#!">Cool Blause</a></h3>
+
+											<div class="card__cols">
+												<div class="card__desc">Anywhere Dress</div>
+												<div class="card__price">$210</div>
+											</div>
+
+											<div class="card__colors">
+												<div class="color color--blue"></div>
+
+												<div class="color color--white"></div>
+
+												<div class="color color--green"></div>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="swiper-slide">
+									<article class="card">
+										<div class="card__fav-btn">
+											<button class="card__btn-fav">
+												<svg class="icon icon--favorite">
+													<use href="./img/svgsprite/sprite.symbol.svg#favorite"></use>
+												</svg>
+											</button>
+										</div>
+
+										<div class="card__picture">
+											<picture>
+												<source srcset="./img/best/best-06.webp 1x, ./img/best/best-06@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/best/best-06.jpg 1x, ./img/best/best-06@2x.jpg 2x" type="image/jpeg" />
+												<img src="./img/best/best-06.jpg" alt="tailored stretch" class="card__img" />
+											</picture>
+										</div>
+
+										<div class="card__body">
+											<h3 class="card__title"><a href="#!">Summer Dress</a></h3>
+
+											<div class="card__cols">
+												<div class="card__desc">Anywhere Dress</div>
+												<div class="card__price">$210</div>
+											</div>
+
+											<div class="card__colors">
+												<div class="color color--white"></div>
+
+												<div class="color color--olive"></div>
+
+												<div class="color color--green"></div>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="collection">
+				<div class="container">
+					<h2 class="collection__title title">Collection</h2>
+
+					<div class="collection__cols">
+						<div class="collection__col">
+							<article class="card-collection">
+								<picture>
+									<source srcset="./img/collection/collection-01.webp 1x, ./img/collection/collection-01@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/collection/collection-01.jpg 1x, ./img/collection/collection-01@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/collection/collection-01.jpg" alt="" class="card-collection__img" />
+								</picture>
+								<div class="card-collection__link">
+									<a href="#!" class="btn btn--mobile-wide">Blouses</a>
+								</div>
+							</article>
+							<article class="card-collection">
+								<picture>
+									<source srcset="./img/collection/collection-02.webp 1x, ./img/collection/collection-02@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/collection/collection-02.jpg 1x, ./img/collection/collection-02@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/collection/collection-02.jpg" alt="" class="card-collection__img" />
+								</picture>
+								<div class="card-collection__link">
+									<a href="#!" class="btn btn--mobile-wide">Dresses</a>
+								</div>
+							</article>
+						</div>
+						<div class="collection__col">
+							<article class="card-collection">
+								<picture>
+									<source srcset="./img/collection/collection-03.webp 1x, ./img/collection/collection-03@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/collection/collection-03.jpg 1x, ./img/collection/collection-03@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/collection/collection-03.jpg" alt="" class="card-collection__img" />
+								</picture>
+								<div class="card-collection__link">
+									<a href="#!" class="btn btn--mobile-wide">Pants</a>
+								</div>
+							</article>
+							<article class="card-collection">
+								<picture>
+									<source srcset="./img/collection/collection-04.webp 1x, ./img/collection/collection-04@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/collection/collection-04.jpg 1x, ./img/collection/collection-04@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/collection/collection-04.jpg" alt="" class="card-collection__img" />
+								</picture>
+								<div class="card-collection__link">
+									<a href="#!" class="btn btn--mobile-wide">Outwear</a>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="follow">
+				<div class="container">
+					<h2 class="follow__title title">Follow us</h2>
+
+					<div class="follow__grid">
+						<picture>
+							<source srcset="./img/follow/follow-01.webp 1x, ./img/follow/follow-01@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/follow/follow-01.jpg 1x, ./img/follow/follow-01@2x.jpg 2x" type="image/jpeg" />
+							<img src="./img/follow/follow-01.jpg" alt="Follow US" class="follow__img" />
+						</picture>
+						<picture>
+							<source srcset="./img/follow/follow-02.webp 1x, ./img/follow/follow-02@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/follow/follow-02.jpg 1x, ./img/follow/follow-02@2x.jpg 2x" type="image/jpeg" />
+							<img src="./img/follow/follow-02.jpg" alt="Follow US" class="follow__img" />
+						</picture>
+						<picture>
+							<source srcset="./img/follow/follow-03.webp 1x, ./img/follow/follow-03@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/follow/follow-03.jpg 1x, ./img/follow/follow-03@2x.jpg 2x" type="image/jpeg" />
+							<img src="./img/follow/follow-03.jpg" alt="Follow US" class="follow__img" />
+						</picture>
+						<picture>
+							<source srcset="./img/follow/follow-04.webp 1x, ./img/follow/follow-04@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/follow/follow-04.jpg 1x, ./img/follow/follow-04@2x.jpg 2x" type="image/jpeg" />
+							<img src="./img/follow/follow-04.jpg" alt="Follow US" class="follow__img" />
+						</picture>
+						<picture>
+							<source srcset="./img/follow/follow-05.webp 1x, ./img/follow/follow-05@2x.webp 2x" type="image/webp" />
+							<source srcset="./img/follow/follow-05.jpg 1x, ./img/follow/follow-05@2x.jpg 2x" type="image/jpeg" />
+							<img src="./img/follow/follow-05.jpg" alt="Follow US" class="follow__img" />
+						</picture>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__copyright">
+					<p>2024 modimal. All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
